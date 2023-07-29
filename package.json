@@ -1,11 +1,11 @@
 {
-  "name": "masonry-layout",
-  "version": "4.2.2",
+  "name": "@paper-folding/masonry-layout",
+  "version": "4.2.2-hotfix.1",
   "description": "Cascading grid layout library",
   "main": "masonry.js",
   "dependencies": {
-    "get-size": "^2.0.2",
-    "outlayer": "^2.1.0"
+    "@paper-folding/outlayer": "^2.1.1-hotfix.1",
+    "get-size": "^2.0.2"
   },
   "devDependencies": {
     "chalk": "^1.1.1",
@@ -31,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/desandro/masonry.git"
+    "url": "git://github.com/Paper-Folding/masonry.git"
   },
   "keywords": [
     "DOM",
@@ -40,7 +40,7 @@
     "layout",
     "outlayer"
   ],
-  "author": "David DeSandro",
+  "author": "Paper Folding",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/desandro/masonry/issues"

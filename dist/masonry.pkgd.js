@@ -1,9 +1,10 @@
 /*!
- * Masonry PACKAGED v4.2.2
+ * Masonry v4.2.2-hotfix.1
  * Cascading grid layout library
  * https://masonry.desandro.com
  * MIT License
- * by David DeSandro
+ * original by David DeSandro
+ * hotfix by Paper Folding
  */
 
 /**
@@ -2346,6 +2347,10 @@ return Outlayer;
     var mathMethod = excess && excess < 1 ? 'round' : 'floor';
     cols = Math[ mathMethod ]( cols );
     this.cols = Math.max( cols, 1 );
+    // it looks like masonry will incorrectly calculate actual columns
+    // when each items' width are fixed percentage value,
+    // so we'd better force correct columnWidth to be calclated here.
+    this.columnWidth = this.containerWidth / this.cols;
   };
 
   proto.getContainerWidth = function() {
