@@ -20,7 +20,7 @@
   } else if ( typeof module == 'object' && module.exports ) {
     // CommonJS
     module.exports = factory(
-      require('outlayer'),
+      require('@paper-folding/outlayer'),
       require('get-size')
     );
   } else {
