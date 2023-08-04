@@ -1,5 +1,5 @@
 /*!
- * Masonry v4.2.2-hotfix.1
+ * Masonry v4.2.2-hotfix.3
  * Cascading grid layout library
  * https://masonry.desandro.com
  * MIT License
@@ -2341,15 +2341,19 @@ return Outlayer;
     // calculate columns
     var containerWidth = this.containerWidth + this.gutter;
     var cols = containerWidth / columnWidth;
-    // fix rounding errors, typically with gutters
-    var excess = columnWidth - containerWidth % columnWidth;
-    // if overshoot is less than a pixel, round up, otherwise floor it
-    var mathMethod = excess && excess < 1 ? 'round' : 'floor';
-    cols = Math[ mathMethod ]( cols );
+    if (this.options.columns) {  // if `columns` option is explicitly delivered, use that cuz columns calculated by masonry is not accurately guaranteed
+      cols = this.options.columns;
+    } else {
+      // fix rounding errors, typically with gutters
+      var excess = columnWidth - containerWidth % columnWidth;
+      // if overshoot is less than a pixel, round up, otherwise floor it
+      var mathMethod = excess && excess < 1 ? 'round' : 'floor';
+      cols = Math[mathMethod](cols);
+    }
     this.cols = Math.max( cols, 1 );
     // it looks like masonry will incorrectly calculate actual columns
     // when each items' width are fixed percentage value,
-    // so we'd better force correct columnWidth to be calclated here.
+    // so we'd better force correct columnWidth to be calculated here.
     this.columnWidth = this.containerWidth / this.cols;
   };
 
