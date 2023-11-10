@@ -1,5 +1,5 @@
 /*!
- * Masonry v4.2.2-hotfix.8
+ * Masonry v4.2.2-hotfix.9
  * Cascading grid layout library
  * https://masonry.desandro.com
  * MIT License

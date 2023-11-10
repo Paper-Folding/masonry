@@ -10,11 +10,11 @@ declare class Masonry {
     constructor(options?: Masonry.Options);
     constructor(selector: string | Element, options?: Masonry.Options);
 
-    masonry?(isColumnsChanged?: boolean): void;
+    masonry?(): void;
     masonry?(eventName: string, listener: any): void;
 
     // layout
-    layout?(): void;
+    layout?(isColumnsChanged?: boolean): void;
     layoutItems?(items: any[], isStill?: boolean): void;
     stamp?(elements: any[]): void;
     unstamp?(elements: any[]): void;
