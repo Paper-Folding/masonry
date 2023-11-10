@@ -1,5 +1,5 @@
 /*!
- * Masonry v4.2.2-hotfix.9
+ * Masonry v4.2.2-hotfix.10
  * Cascading grid layout library
  * https://masonry.desandro.com
  * MIT License
@@ -87,7 +87,6 @@
     var mathMethod = excess && excess < 1 ? 'round' : 'floor';
     cols = Math[mathMethod](cols);
     this.cols = Math.max( cols, 1 );
-    this.options.columns = this.cols;
     // it looks like masonry will incorrectly calculate actual columns
     // when each items' width are fixed percentage value,
     // so we'd better force correct columnWidth to be calculated here.

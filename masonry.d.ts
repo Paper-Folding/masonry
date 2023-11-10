@@ -14,7 +14,7 @@ declare class Masonry {
     masonry?(eventName: string, listener: any): void;
 
     // layout
-    layout?(isColumnsChanged?: boolean): void;
+    layout?(changedColumns?: number): void;
     layoutItems?(items: any[], isStill?: boolean): void;
     stamp?(elements: any[]): void;
     unstamp?(elements: any[]): void;
