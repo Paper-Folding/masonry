@@ -4,15 +4,13 @@
 // Original Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 
-/// <reference types="jquery" />
-
 export = Masonry;
 
 declare class Masonry {
     constructor(options?: Masonry.Options);
     constructor(selector: string | Element, options?: Masonry.Options);
 
-    masonry?(): void;
+    masonry?(isColumnsChanged?: boolean): void;
     masonry?(eventName: string, listener: any): void;
 
     // layout

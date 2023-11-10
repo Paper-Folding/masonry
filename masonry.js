@@ -1,10 +1,10 @@
 /*!
- * Masonry v4.2.2-hotfix.6
+ * Masonry v4.2.2-hotfix.8
  * Cascading grid layout library
  * https://masonry.desandro.com
  * MIT License
  * original by David DeSandro
- * patch by Paper Folding
+ * patched by Paper Folding
  */
 
 ( function( window, factory ) {
