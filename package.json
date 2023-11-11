@@ -4,7 +4,7 @@
   "description": "Cascading grid layout library",
   "main": "masonry.js",
   "dependencies": {
-    "@paper-folding/outlayer": "^2.1.1-hotfix.3",
+    "@paper-folding/outlayer": "^2.1.2",
     "get-size": "^2.0.2"
   },
   "devDependencies": {
