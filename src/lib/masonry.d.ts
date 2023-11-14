@@ -66,10 +66,3 @@ declare namespace Masonry {
         initLayout?: boolean | undefined;
     }
 }
-
-declare global {
-    interface JQuery {
-        masonry(options?: Masonry.Options): JQuery;
-        masonry(selector: string | Element, options?: Masonry.Options | JQuery): JQuery;
-    }
-}

@@ -1,37 +1,31 @@
 {
   "name": "@paper-folding/masonry-layout",
-  "version": "4.2.2-hotfix.11",
+  "version": "5.0.0",
   "description": "Cascading grid layout library",
-  "main": "masonry.js",
+  "main": "src/lib/masonry.js",
   "dependencies": {
-    "@paper-folding/outlayer": "^2.1.2",
+    "@paper-folding/outlayer": "^3.0.0",
     "get-size": "^2.0.2"
   },
   "devDependencies": {
     "chalk": "^1.1.1",
-    "gulp": "^3.9.0",
-    "gulp-jshint": "^2.0.0",
-    "gulp-json-lint": "^0.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-replace": "^0.5.4",
-    "gulp-requirejs-optimize": "metafizzy/gulp-requirejs-optimize",
-    "gulp-uglify": "^1.5.1",
-    "gulp-util": "^3.0.7",
-    "jquery": ">=1.4.3 <4",
-    "jquery-bridget": "~2.0.0",
     "jshint": "^2.8.0",
     "minimist": "^1.2.0",
-    "qunitjs": "^1.12"
+    "prettier": "^3.1.0",
+    "qunitjs": "^1.12",
+    "vite": "^4.5.0"
   },
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "test/index.html"
+    "prebuild": "prettier . --write",
+    "build": "vite build",
+    "test": "vite"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Paper-Folding/masonry.git"
+    "url": "https://github.com/Paper-Folding/masonry"
   },
   "keywords": [
     "DOM",
@@ -48,7 +42,7 @@
   "homepage": "https://masonry.desandro.com",
   "files": [
     "dist",
-    "masonry.d.ts",
-    "masonry.js"
+    "src/lib/masonry.d.ts",
+    "src/lib/masonry.js"
   ]
 }
