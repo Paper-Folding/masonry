@@ -35,18 +35,6 @@ Masonry has been actively maintained and improved upon for 8 years, with 900 Git
 
 ## Initialize
 
-With jQuery
-
-``` js
-$('.grid').masonry({
-  // options...
-  itemSelector: '.grid-item',
-  columnWidth: 200
-});
-```
-
-With vanilla JavaScript
-
 ``` js
 // vanilla JS
 // init with element
