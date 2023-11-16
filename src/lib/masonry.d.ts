@@ -24,6 +24,7 @@ declare class Masonry {
     prepended?(elements: any[]): void;
     addItems?(elements: any[]): void;
     remove?(elements: any[]): void;
+    insert?(elements: any[]): void;
 
     // events
     on?(eventName: string, listener: any): void;

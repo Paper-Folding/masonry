@@ -208,4 +208,39 @@ proto.needsResizeLayout = function () {
     return previousWidth != this.containerWidth;
 };
 
+/**
+ * Insert elements to layout
+ * borrowed code from https://github.com/desandro/masonry/issues/950#issuecomment-296721854
+ * @param {Array or NodeList or Element} elems
+ * @param {Number} index
+ */
+proto.insert = function (elems, index) {
+    let items = this._itemize(elems);
+    if (!items.length) return;
+
+    // append item elements
+    let item,
+        len = items.length;
+    let fragment = document.createDocumentFragment();
+    for (let i = 0; i < len; i++) {
+        item = items[i];
+        fragment.appendChild(item.element);
+    }
+    let beforeElem = this.items[index + 1].element;
+    this.element.insertBefore(fragment, beforeElem);
+    // insert items
+    let spliceArgs = [index, 0].concat(items);
+    this.items.splice.apply(this.items, spliceArgs);
+    // set flag
+    for (let i = 0; i < len; i++) {
+        items[i].isLayoutInstant = true;
+    }
+    this.layout();
+    // reset flag
+    for (let i = 0; i < len; i++) {
+        delete items[i].isLayoutInstant;
+    }
+    this.reveal(items);
+};
+
 export default Masonry;
