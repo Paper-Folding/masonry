@@ -1,10 +1,10 @@
 {
   "name": "@paper-folding/masonry-layout",
-  "version": "5.0.2",
+  "version": "5.0.3",
   "description": "Cascading grid layout library",
   "main": "src/lib/masonry.js",
   "dependencies": {
-    "@paper-folding/outlayer": "^3.0.0",
+    "@paper-folding/outlayer": "^3.0.2",
     "get-size": "^2.0.2"
   },
   "devDependencies": {
