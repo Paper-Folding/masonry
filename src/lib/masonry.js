@@ -226,7 +226,7 @@ proto.insert = function (elems, index) {
         item = items[i];
         fragment.appendChild(item.element);
     }
-    let beforeElem = this.items[index + 1].element;
+    let beforeElem = this.items[index].element;
     this.element.insertBefore(fragment, beforeElem);
     // insert items
     let spliceArgs = [index, 0].concat(items);
