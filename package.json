@@ -1,12 +1,13 @@
 {
   "name": "@paper-folding/masonry-layout",
-  "version": "5.0.6",
+  "version": "5.0.7",
   "description": "Cascading grid layout library",
-  "main": "src/lib/masonry.js",
-  "dependencies": {
-    "@paper-folding/outlayer": "^3.0.7"
-  },
   "type": "module",
+  "files": [
+    "dist",
+    "src/lib"
+  ],
+  "main": "src/lib/masonry.js",
   "devDependencies": {
     "prettier": "^3.1.1",
     "vite": "^5.0.10"
@@ -30,14 +31,13 @@
     "layout",
     "outlayer"
   ],
+  "dependencies": {
+    "@paper-folding/outlayer": "^3.0.8"
+  },
   "author": "Paper Folding",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/desandro/masonry/issues"
   },
-  "homepage": "https://masonry.desandro.com",
-  "files": [
-    "dist",
-    "src"
-  ]
+  "homepage": "https://masonry.desandro.com"
 }

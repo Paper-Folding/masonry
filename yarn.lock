@@ -117,10 +117,10 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.19.10.tgz#bd123a74f243d2f3a1f046447bb9b363ee25d072"
   integrity sha512-whqLG6Sc70AbU73fFYvuYzaE4MNMBIlR1Y/IrUeOXFrWHxBEjjbZaQ3IXIQS8wJdAzue2GwYZCjOrgrU1oUHoA==
 
-"@paper-folding/outlayer@^3.0.7":
-  version "3.0.7"
-  resolved "https://registry.yarnpkg.com/@paper-folding/outlayer/-/outlayer-3.0.7.tgz#9dc8b5e9a60d79409d26626dec1d99d3d88d92e1"
-  integrity sha512-YyR9B0+1FHqKK20rnDUdIT/PiqwXU7aa35k/N3Mei/G3NUmxdXBWLjB6XEQuJ99Wtp1H4F1VTMi/dvLu5CVZpQ==
+"@paper-folding/outlayer@^3.0.8":
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/@paper-folding/outlayer/-/outlayer-3.0.8.tgz#ba6c6147fec1eb1298c9cf6f1714f7ec4b7a7f2b"
+  integrity sha512-4X7c+rFOagX0CiSRZbWCCQ+4lm04Lrp/TdXs1UyK6jbNjNpcE9icto47qkmymfT6049r5acGWPX4z/0BqTgfdQ==
   dependencies:
     ev-emitter "^2.1.2"
     fizzy-ui-utils "^3.0.0"
