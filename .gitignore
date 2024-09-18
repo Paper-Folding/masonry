@@ -2,3 +2,12 @@ components/
 bower_components/
 node_modules/
 sandbox/**/bundle.js
+
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*

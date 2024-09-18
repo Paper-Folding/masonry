@@ -4,8 +4,6 @@
 // Original Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 
-export = Masonry;
-
 declare class Masonry {
     constructor(options?: Masonry.Options);
     constructor(selector: string | Element, options?: Masonry.Options);
@@ -67,3 +65,5 @@ declare namespace Masonry {
         initLayout?: boolean | undefined;
     }
 }
+
+export default Masonry;
